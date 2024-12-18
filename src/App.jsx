@@ -6,12 +6,6 @@ export default function App() {
   return (
     <ThemeProvider defaultTheme="dark">
       <Landing />
-      <span>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa aliquam
-        accusamus consequatur numquam quidem rem eaque sunt necessitatibus
-        impedit incidunt deserunt optio quas, adipisci dolorum voluptatem quam.
-        Rerum, dignissimos doloribus!
-      </span>
     </ThemeProvider>
   );
 }
