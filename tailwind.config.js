@@ -8,6 +8,13 @@ module.exports = {
     screens,
     fontSize,
     extend: {
+       fontFamily: {
+        Regular: ["Raleway Regular"],
+        Medium: ["Raleway Medium"],
+        Thin: ["Thin"],
+        Bold: ["Raleway Bold"],
+        Black: ["Raleway Black"],
+      },
       borderRadius: {
         lg: 'var(--radius)',
         md: 'calc(var(--radius) - 2px)',

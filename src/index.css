@@ -23,7 +23,7 @@
 }
 
 @font-face {
-  font-family: 'Raleway Thin';
+  font-family: 'Thin';
   font-style: normal;
   font-weight: normal;
   src: url('./assets/fonts/Raleway-Thin.woff') format('woff');
@@ -35,6 +35,13 @@
   font-weight: normal;
   src: url('./assets/fonts/Raleway-Bold.woff') format('woff');
 }
+@font-face {
+  font-family: 'Raleway Black';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Raleway Black'), url('Raleway-Black.woff') format('woff');
+}
+
 * {
   font-family: 'Raleway Medium';
 }
