@@ -14,7 +14,7 @@ export default function Navbar() {
       : './assets/images/logo/Logo-dark.svg';
 
   return (
-    <div className="~px-5/24">
+    <div className='row-span-1'>
       <div className="flex items-center justify-between py-5">
         <div>
           <img src={logoSrc} alt="Logo CoinFlip" />
@@ -30,7 +30,7 @@ export default function Navbar() {
         </div>
         <div className="flex items-center gap-3">
           <ModeToggle />
-          <Button className="bg-gradient-to-l from-[#18C8FF] to-[#933FFE] dark:from-[#933FFE] dark:to-[#18C8FF]" variant="destructive">Sign up</Button>
+          <Button className="bg-gradient-to-l from-[#18C8FF] to-[#933FFE] dark:from-[#933FFE] dark:to-[#18C8FF] text-foreground">Sign up</Button>
         </div>
       </div>
     </div>

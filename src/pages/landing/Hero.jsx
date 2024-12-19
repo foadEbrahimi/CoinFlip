@@ -3,10 +3,11 @@ import React from 'react';
 import img from '/assets/images/hero/gradient1.svg';
 import img2 from '/assets/images/hero/gradient2.svg';
 import Navbar from '@/components/myComponents/Hero/Navbar';
+import Content from '@/components/myComponents/Hero/Content';
 
 export default function Hero() {
   return (
-    <div id="heroBg" className="relative overflow-hidden z-10">
+    <div id="heroBg" className="relative grid grid-rows-12 overflow-hidden z-10 ~px-5/24">
       <Navbar />
       {/* gradient svgs */}
       <div>
@@ -24,6 +25,7 @@ export default function Hero() {
         />
       </div>
       {/* end */}
+      <Content/>
     </div>
   );
 }
