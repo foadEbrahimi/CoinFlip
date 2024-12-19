@@ -7,6 +7,38 @@
   background: url(./assets/images/hero/circles.svg) center/cover;
   height: 100dvh;
 }
+
+@font-face {
+  font-family: 'Raleway Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: url('./assets/fonts/Raleway-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Raleway Medium';
+  font-style: normal;
+  font-weight: normal;
+  src: url('./assets/fonts/Raleway-Medium.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Raleway Thin';
+  font-style: normal;
+  font-weight: normal;
+  src: url('./assets/fonts/Raleway-Thin.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Raleway Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: url('./assets/fonts/Raleway-Bold.woff') format('woff');
+}
+* {
+  font-family: 'Raleway Medium';
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
