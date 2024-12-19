@@ -2,7 +2,7 @@ import React from 'react';
 
 import img from '/assets/images/hero/gradient1.svg';
 import img2 from '/assets/images/hero/gradient2.svg';
-import Navbar from '@/components/myComponents/Navbar';
+import Navbar from '@/components/myComponents/Hero/Navbar';
 
 export default function Hero() {
   return (

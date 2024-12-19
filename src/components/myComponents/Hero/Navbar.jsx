@@ -1,10 +1,10 @@
 import React from 'react';
 
-import { Button } from '../ui/button';
-import { ModeToggle } from '../ui/mode-toggle';
+import { Button } from '../../ui/button';
+import { ModeToggle } from '../../ui/mode-toggle';
 
-import { Navlist } from '../../constants/index';
-import { useTheme } from '../ui/theme-provider';
+import { Navlist } from '../../../constants/index';
+import { useTheme } from '../../ui/theme-provider';
 
 export default function Navbar() {
   const { theme } = useTheme();
