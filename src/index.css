@@ -42,6 +42,7 @@
 @layer base {
   :root {
     --background: 0 0% 100%;
+    --navItemHover: 0 0 0 / 0.2;
 
     --foreground: 240 10% 3.9%;
 
@@ -93,6 +94,7 @@
   }
   .dark {
     --background: 273 94% 6%;
+    --navItemHover: 255 255 255 / 0.2;
 
     --foreground: 0 0% 98%;
 
