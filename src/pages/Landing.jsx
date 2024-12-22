@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 
-import Hero from './landing/Hero';
+import Hero from "./landing/Hero";
 
 export default function Landing() {
   return (
