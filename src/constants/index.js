@@ -1,22 +1,61 @@
+import bitcoin from "../../public/assets/images/MarketTrend/bitcoin.png";
+import etherium from "../../public/assets/images/MarketTrend/etherium.svg";
+import bnb from "../../public/assets/images/MarketTrend/bnb.svg";
+import usdt from "../../public/assets/images/MarketTrend/usdt.svg";
+
 export const Navlist = [
   {
     id: 1,
-    label: 'Buy / Sell',
+    label: "Buy / Sell",
   },
   {
     id: 2,
-    label: 'Grow',
+    label: "Grow",
   },
   {
     id: 3,
-    label: 'Markets',
+    label: "Markets",
   },
   {
     id: 4,
-    label: 'Business',
+    label: "Business",
   },
   {
     id: 5,
-    label: 'Support',
+    label: "Support",
+  },
+];
+export const MarketTrending = [
+  {
+    id: 1,
+    img: bitcoin,
+    label: "BTC",
+    badge: "bitcoin",
+    price: "56,623.54",
+    percentage: "1.41",
+  },
+  {
+    id: 2,
+    img: etherium,
+    label: "ETH",
+    badge: "ETHEREUM",
+    price: "$4,267.90",
+    percentage: "2.22",
+  },
+  {
+    id: 3,
+    img: bnb,
+    label: "BNB",
+    badge: "BINANCE",
+    price: "587.74",
+    percentage: "0.82",
+  },
+  {
+    id: 4,
+    img: usdt,
+    label: "USDT",
+    badge: "TETHER",
+    price: "0.9998",
+    percentage: "0,03",
   },
 ];
