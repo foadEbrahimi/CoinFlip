@@ -35,13 +35,19 @@
   font-weight: normal;
   src: url("./assets/fonts/Raleway-Bold.woff") format("woff");
 }
+
+@font-face {
+  font-family: "Raleway SemiBold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./assets/fonts/Raleway-SemiBold.woff") format("woff");
+}
+
 @font-face {
   font-family: "Raleway Black";
   font-style: normal;
   font-weight: normal;
-  src:
-    local("Raleway Black"),
-    url("Raleway-Black.woff") format("woff");
+  src: url("./assets/fonts/Raleway-Black.woff") format("woff");
 }
 
 * {
@@ -189,3 +195,15 @@
       250% 0;
   }
 }
+
+/* .shape {
+  transform: translateX(-100px);
+  opacity: 0;
+  animation: anime 2s both;
+}
+@keyframes anime {
+  to {
+    transform: translate(0);
+    opacity: 1;
+  }
+} */

@@ -13,6 +13,7 @@ module.exports = {
         Medium: ["Raleway Medium"],
         Thin: ["Thin"],
         Bold: ["Raleway Bold"],
+        SemiBold: ["Raleway SemiBold"],
         Black: ["Raleway Black"],
       },
       borderRadius: {
