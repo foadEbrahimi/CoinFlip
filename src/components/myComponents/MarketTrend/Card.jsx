@@ -14,16 +14,16 @@ import chart1 from "/assets/images/MarketTrend/chart1.svg";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 
-export default function CardMarket() {
+export default function CardMarket({ img, label, badge, price, percentage }) {
   return (
     <div className="grid grid-cols-4">
       <Card className="w-[297px] border-[rgba(255,255,255,0.05)] bg-[rgba(255,255,255,0.02)] p-5">
         <CardHeader className="items-center justify-between">
           <div className="flex items-center gap-3">
-            <img src={bitcoin} alt="bitcoin png" className="" />
-            <span className="font-SemiBold">BTC</span>
+            <img src={img} alt={`${label} image`} />
+            <span className="font-SemiBold">{label}</span>
             <Badge className="font-SemiBold bg-[#C6C6C6] px-1 uppercase tracking-widest">
-              bitcoin
+              {badge}
             </Badge>
           </div>
           <div className="cursor-pointer rounded-full bg-white/5 p-3">
@@ -34,10 +34,10 @@ export default function CardMarket() {
         <CardFooter className="justify-between">
           <div className="space-y-2">
             <CardTitle className="font-RegularRoboto text-2xl tracking-wider">
-              $56,623.54
+              ${price}
             </CardTitle>
             <CardDescription className="font-RegularRoboto text-xl">
-              1.41%
+              {percentage}%
             </CardDescription>
           </div>
           <img src={chart1} alt="chart svg" className="h-full" />
