@@ -34,7 +34,7 @@ export default function Hero() {
           src={img2}
           alt="gradient svg two"
           draggable={false}
-          className="absolute -top-20 right-0 -z-10 translate-x-28"
+          className="absolute -top-36 right-0 -z-10 translate-x-28"
         />
       </div>
       {/* end */}
