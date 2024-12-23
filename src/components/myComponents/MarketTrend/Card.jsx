@@ -22,7 +22,7 @@ export default function CardMarket() {
           <div className="flex items-center gap-3">
             <img src={bitcoin} alt="bitcoin png" className="" />
             <span className="font-SemiBold">BTC</span>
-            <Badge className="bg-[#C6C6C6] px-1 uppercase tracking-widest font-SemiBold">
+            <Badge className="font-SemiBold bg-[#C6C6C6] px-1 uppercase tracking-widest">
               bitcoin
             </Badge>
           </div>
@@ -30,11 +30,13 @@ export default function CardMarket() {
             <img src={arrow} alt="bitcoin png" />
           </div>
         </CardHeader>
-        <Separator className="my-3 bg-[#ECF1F0] opacity-5" />
+        <Separator className="my-4 bg-[#ECF1F0] opacity-5" />
         <CardFooter className="justify-between">
           <div className="space-y-2">
-            <CardTitle className="font-sans text-2xl">$56,623.54</CardTitle>
-            <CardDescription className="font-sans text-xl">
+            <CardTitle className="font-RegularRoboto text-2xl tracking-wider">
+              $56,623.54
+            </CardTitle>
+            <CardDescription className="font-RegularRoboto text-xl">
               1.41%
             </CardDescription>
           </div>
