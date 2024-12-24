@@ -1,3 +1,5 @@
+import { Badge } from "@/components/ui/badge";
+import { Separator } from "@/components/ui/separator";
 import React from "react";
 import {
   Card,
@@ -6,8 +8,6 @@ import {
   CardHeader,
   CardTitle,
 } from "../../ui/card";
-import { Separator } from "@/components/ui/separator";
-import { Badge } from "@/components/ui/badge";
 
 import arrow from "/assets/images/MarketTrend/arrow.svg";
 import chart1 from "/assets/images/MarketTrend/chart1.svg";
@@ -15,7 +15,7 @@ import chart2 from "/assets/images/MarketTrend/chart2.svg";
 
 export default function CardMarket({ img, label, badge, price, percentage }) {
   return (
-    <Card className="w-full border-[rgba(255,255,255,0.05)] bg-[rgba(255,255,255,0.02)] p-5 flex-1 min-w-fit">
+    <Card className="w-full min-w-fit flex-1">
       <CardHeader className="items-center justify-between">
         <div className="flex items-center gap-3">
           <img src={img} alt={`${label} image`} />
