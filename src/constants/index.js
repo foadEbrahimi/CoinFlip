@@ -39,7 +39,7 @@ export const MarketTrending = [
     img: etherium,
     label: "ETH",
     badge: "ETHEREUM",
-    price: "$4,267.90",
+    price: "4,267.90",
     percentage: "2.22",
   },
   {
