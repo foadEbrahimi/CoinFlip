@@ -40,7 +40,7 @@ export default function Hero() {
       {/* end */}
       <Content />
       {/* hanging stars */}
-      <div>
+      <div className="hidden md:block">
         {/* left side */}
         <div className="relative -z-20 lg:z-0">
           <img
