@@ -1,7 +1,7 @@
-import bitcoin from "../../public/assets/images/MarketTrend/bitcoin.png";
-import etherium from "../../public/assets/images/MarketTrend/etherium.svg";
-import bnb from "../../public/assets/images/MarketTrend/bnb.svg";
-import usdt from "../../public/assets/images/MarketTrend/usdt.svg";
+import bitcoin from "/assets/images/MarketTrend/bitcoin.png";
+import etherium from "/assets/images/MarketTrend/etherium.svg";
+import bnb from "/assets/images/MarketTrend/bnb.svg";
+import usdt from "/assets/images/MarketTrend/usdt.svg";
 
 export const Navlist = [
   {
