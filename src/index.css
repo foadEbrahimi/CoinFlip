@@ -7,6 +7,13 @@
   background: url(./assets/images/hero/circles.svg) center/cover;
   height: 100dvh;
 }
+/* حالا در فایرفاکس */
+#scroll {
+  scrollbar-width: thin; /* تنظیم پیچیدگی باریک */
+  scrollbar-color: rgba(255, 255, 255, 0.1) transparent; /* رنگ نوار اسکرول */
+}
+
+
 
 @font-face {
   font-family: "Raleway Regular";
