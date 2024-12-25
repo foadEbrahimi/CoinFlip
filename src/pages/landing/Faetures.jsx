@@ -17,6 +17,19 @@ export default function Faetures() {
           <CardFaetures key={item.id} {...item} />
         ))}
       </div>
+
+      <div className="mb-10 mt-24 items-center justify-between space-y-5 rounded-xl border border-[rgba(255,255,255,0.08)] p-6 ~px-5/14 sm:flex">
+        <div className="space-y-3">
+          <span className="font-SemiBold text-2xl">New In Cryptocurrency?</span>
+          <p className="max-w-[29rem] font-RegularRoboto text-[#B6B6B6]">
+            We'll tell you what cryptocurrencies are, how they work and why you
+            should own one right now. So let's do it.
+          </p>
+        </div>
+        <button className="rounded-lg bg-[#0FAE96] p-4 font-SemiBold text-sm">
+          Learn & Explore Now
+        </button>
+      </div>
     </div>
   );
 }
