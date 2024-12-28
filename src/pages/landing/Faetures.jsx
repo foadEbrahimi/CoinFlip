@@ -1,6 +1,7 @@
+import React from "react";
 import CardFaetures from "@/components/myComponents/Faetures/Card";
 import { FaeturesInfo } from "@/constants";
-import React from "react";
+import { Button } from "@/components/ui/button";
 
 export default function Faetures() {
   return (
@@ -26,9 +27,9 @@ export default function Faetures() {
             should own one right now. So let's do it.
           </p>
         </div>
-        <button className="rounded-lg bg-[#0FAE96] p-4 font-SemiBold text-sm">
+        <Button className="rounded-lg p-6 text-[15px] bg-[#0FAE96] font-SemiBold">
           Learn & Explore Now
-        </button>
+        </Button>
       </div>
     </div>
   );
