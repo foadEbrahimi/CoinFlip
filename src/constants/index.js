@@ -8,6 +8,8 @@ import faetures2 from "/assets/images/Faetures/feature-image2.svg";
 import faetures3 from "/assets/images/Faetures/feature-image3.svg";
 import faetures4 from "/assets/images/Faetures/feature-image4.svg";
 
+import chart1 from "/assets/images/MarketTrend/chart1.svg";
+import chart2 from "/assets/images/MarketTrend/chart2.svg";
 export const Navlist = [
   {
     id: 1,
@@ -88,5 +90,39 @@ export const FaeturesInfo = [
     img: faetures4,
     title: "Learn Best Practice",
     decs: "Easy to know how to cryptocurrency works and friendly to newbie.",
+  },
+];
+export const TableInfo = [
+  {
+    id: 1,
+    img: bitcoin,
+    name: "bitcoin",
+    lastPrice: "56,623.54",
+    change: "1.41",
+    marketStats: chart1,
+  },
+  {
+    id: 2,
+    img: etherium,
+    name: "Ethereum",
+    lastPrice: "4,267.90",
+    change: "2.22",
+    marketStats: chart1,
+  },
+  {
+    id: 3,
+    img: bnb,
+    name: "Binance",
+    lastPrice: "587.74",
+    change: "-0.82",
+    marketStats: chart2,
+  },
+  {
+    id: 4,
+    img: usdt,
+    name: "Tether",
+    lastPrice: "0.9998",
+    change: "-0.03",
+    marketStats: chart2,
   },
 ];
