@@ -2,6 +2,9 @@ import bitcoin from "/assets/images/MarketTrend/bitcoin.png";
 import etherium from "/assets/images/MarketTrend/etherium.svg";
 import bnb from "/assets/images/MarketTrend/bnb.svg";
 import usdt from "/assets/images/MarketTrend/usdt.svg";
+import solana from "/assets/images/MarketTrend/solana.svg";
+import xrp from "/assets/images/MarketTrend/xrp.svg";
+import usdCoin from "/assets/images/MarketTrend/usdCoin.svg";
 
 import faetures1 from "/assets/images/Faetures/feature-image1.svg";
 import faetures2 from "/assets/images/Faetures/feature-image2.svg";
@@ -10,6 +13,7 @@ import faetures4 from "/assets/images/Faetures/feature-image4.svg";
 
 import chart1 from "/assets/images/MarketTrend/chart1.svg";
 import chart2 from "/assets/images/MarketTrend/chart2.svg";
+
 export const Navlist = [
   {
     id: 1,
@@ -117,7 +121,7 @@ export const TableInfo = [
     name: "Binance",
     lastPrice: "587.74",
     change: "-0.82",
-    marketStats: chart2,
+    marketStats: chart1,
     symbol: "bnb",
   },
   {
@@ -126,7 +130,34 @@ export const TableInfo = [
     name: "Tether",
     lastPrice: "0.9998",
     change: "-0.03",
-    marketStats: chart2,
+    marketStats: chart1,
     symbol: "usdt",
+  },
+  {
+    id: 5,
+    img: solana,
+    name: "Solana",
+    lastPrice: "213.67",
+    change: "-0.53",
+    marketStats: chart2,
+    symbol: "sol",
+  },
+  {
+    id: 6,
+    img: xrp,
+    name: "XRP",
+    lastPrice: "1.04",
+    change: "-0.44",
+    marketStats: chart2,
+    symbol: "xrp",
+  },
+  {
+    id: 7,
+    img: usdCoin,
+    name: "USD Coin",
+    lastPrice: "1.00",
+    change: "-0.03",
+    marketStats: chart2,
+    symbol: "usdc",
   },
 ];
