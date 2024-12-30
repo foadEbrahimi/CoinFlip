@@ -9,9 +9,10 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default:
-          "border border-[rgba(255,255,255,0.05)] text-[#B6B6B6] bg-[rgba(255,255,255,0.05)]",
-        filled: "bg-white text-[#211631]",
+        default: "",
+        filledWhite: "bg-white text-[#211631]",
+        border:
+          "bg-white text-[#B6B6B6] border border-[rgba(255,255,255,0.05)] bg-[rgba(255,255,255,0.05)]",
       },
       size: {
         default: "h-10 px-4 py-3",
