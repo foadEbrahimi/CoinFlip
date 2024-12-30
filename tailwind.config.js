@@ -16,6 +16,7 @@ module.exports = {
         SemiBold: ["Raleway SemiBold"],
         Black: ["Raleway Black"],
         RegularRoboto: ["Roboto Regular"],
+        MediumRoboto: ["Roboto Medium"],
       },
       borderRadius: {
         lg: 'var(--radius)',
