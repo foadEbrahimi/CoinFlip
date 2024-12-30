@@ -3,6 +3,7 @@ import React from "react";
 
 import { Button } from "@/components/ui/button";
 import search from "/assets/images/MarketUpdate/search.png";
+import { TableDemo } from "@/components/myComponents/MarketUpdate/Table";
 
 export default function MarketUpdate() {
   return (
@@ -35,6 +36,8 @@ export default function MarketUpdate() {
           <img src={search} className="h-5 w-5" alt="search png" />
         </Input>
       </div>
+
+      <TableDemo />
     </div>
   );
 }
