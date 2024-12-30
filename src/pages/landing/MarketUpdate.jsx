@@ -19,13 +19,13 @@ export default function MarketUpdate() {
           id="scroll"
           className="flex items-center gap-3 overflow-scroll xl:overflow-hidden"
         >
-          <Button variant="filled">Popular</Button>
-          <Button>Metaverse</Button>
-          <Button>Entertainment</Button>
-          <Button>Energy</Button>
-          <Button>Gaming</Button>
-          <Button>Music</Button>
-          <Button>See All 12+</Button>
+          <Button variant="filledWhite">Popular</Button>
+          <Button variant="border">Metaverse</Button>
+          <Button variant="border">Entertainment</Button>
+          <Button variant="border">Energy</Button>
+          <Button variant="border">Gaming</Button>
+          <Button variant="border">Music</Button>
+          <Button variant="border">See All 12+</Button>
         </div>
         <Input
           placeholder="Search Coin"
