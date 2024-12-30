@@ -96,10 +96,11 @@ export const TableInfo = [
   {
     id: 1,
     img: bitcoin,
-    name: "bitcoin",
+    name: "Bitcoin",
     lastPrice: "56,623.54",
     change: "1.41",
     marketStats: chart1,
+    symbol: "btc",
   },
   {
     id: 2,
@@ -108,6 +109,7 @@ export const TableInfo = [
     lastPrice: "4,267.90",
     change: "2.22",
     marketStats: chart1,
+    symbol: "eth",
   },
   {
     id: 3,
@@ -116,6 +118,7 @@ export const TableInfo = [
     lastPrice: "587.74",
     change: "-0.82",
     marketStats: chart2,
+    symbol: "bnb",
   },
   {
     id: 4,
@@ -124,5 +127,6 @@ export const TableInfo = [
     lastPrice: "0.9998",
     change: "-0.03",
     marketStats: chart2,
+    symbol: "usdt",
   },
 ];
