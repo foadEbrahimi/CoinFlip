@@ -4,6 +4,7 @@ import Hero from "./landing/Hero";
 import MarketTrend from "./landing/MarketTrend";
 import Faetures from "./landing/Faetures";
 import MarketUpdate from "./landing/MarketUpdate";
+import GetStarted from "./landing/GetStarted";
 
 export default function Landing() {
   return (
@@ -12,6 +13,7 @@ export default function Landing() {
       <MarketTrend />
       <Faetures />
       <MarketUpdate />
+      <GetStarted />
     </div>
   );
 }
