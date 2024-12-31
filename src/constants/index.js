@@ -14,6 +14,10 @@ import faetures4 from "/assets/images/Faetures/feature-image4.svg";
 import chart1 from "/assets/images/MarketTrend/chart1.svg";
 import chart2 from "/assets/images/MarketTrend/chart2.svg";
 
+import img1 from "/assets/images/GetStarted/img1.svg";
+import img2 from "/assets/images/GetStarted/img2.svg";
+import img3 from "/assets/images/GetStarted/img3.svg";
+
 export const Navlist = [
   {
     id: 1,
@@ -159,5 +163,25 @@ export const TableInfo = [
     change: "-0.03",
     marketStats: chart2,
     symbol: "usdc",
+  },
+];
+export const GetStartedInfo = [
+  {
+    id: 1,
+    label: "Create Your Account",
+    desc: "Your account and personal identity are guaranteed safe.",
+    img: img1,
+  },
+  {
+    id: 2,
+    label: "Connect Bank Account",
+    desc: "Connect the bank account to start transactions.",
+    img: img2,
+  },
+  {
+    id: 3,
+    label: "Start Build Portfolio",
+    desc: "Buy and sell popular currencies and keep track of them.",
+    img: img3,
   },
 ];
