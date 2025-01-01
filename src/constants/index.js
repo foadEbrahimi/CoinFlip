@@ -14,9 +14,16 @@ import faetures4 from "/assets/images/Faetures/feature-image4.svg";
 import chart1 from "/assets/images/MarketTrend/chart1.svg";
 import chart2 from "/assets/images/MarketTrend/chart2.svg";
 
-import img1 from "/assets/images/GetStarted/img1.svg";
-import img2 from "/assets/images/GetStarted/img2.svg";
-import img3 from "/assets/images/GetStarted/img3.svg";
+import img1GetStarted from "/assets/images/GetStarted/img1.svg";
+import img2GetStarted from "/assets/images/GetStarted/img2.svg";
+import img3GetStarted from "/assets/images/GetStarted/img3.svg";
+
+import img1Blog from "../../public/assets/images/Blog/cryptoBase.png";
+import img2Blog from "../../public/assets/images/Blog/personalBank.png";
+import img3Blog from "../../public/assets/images/Blog/cryptoWallet.png";
+import img4Blog from "../../public/assets/images/Blog/bitcoin.png";
+import img5Blog from "../../public/assets/images/Blog/bestTime.png";
+import img6Blog from "../../public/assets/images/Blog/defi.png";
 
 export const Navlist = [
   {
@@ -170,18 +177,62 @@ export const GetStartedInfo = [
     id: 1,
     label: "Create Your Account",
     desc: "Your account and personal identity are guaranteed safe.",
-    img: img1,
+    img: img1GetStarted,
   },
   {
     id: 2,
     label: "Connect Bank Account",
     desc: "Connect the bank account to start transactions.",
-    img: img2,
+    img: img2GetStarted,
   },
   {
     id: 3,
     label: "Start Build Portfolio",
     desc: "Buy and sell popular currencies and keep track of them.",
-    img: img3,
+    img: img3GetStarted,
+  },
+];
+export const BlogInfo = [
+  {
+    id: 1,
+    label: "What is cryptocurrency? all you need to know",
+    tag: "CRYPTO BASIC",
+    desc: "Cryptocurrencies are basically digital assets. It is secured by cryptography.. ",
+    img: img1Blog,
+  },
+  {
+    id: 2,
+    label: "Can crypto really replace your bank account?",
+    tag: "CRYPTO BASIC",
+    desc: "From direct deposit to earning yield, key ways crypto can help you take control..",
+    img: img2Blog,
+  },
+  {
+    id: 3,
+    label: "How to setup crypto wallet in your account",
+    tag: "TIPS & TRICKS",
+    desc: "A crypto wallet is a place where you can securely keep your crypto.. ",
+    img: img3Blog,
+  },
+  {
+    id: 4,
+    label: "The fact about bitcoin must you know",
+    tag: "CRYPTO BASIC",
+    desc: "Bitcoin is the world's first widely adopted cryptocurrency, it allows for secure.. ",
+    img: img4Blog,
+  },
+  {
+    id: 5,
+    label: "When is the best time to invest in crypto?",
+    tag: "TIPS & TRICKS",
+    desc: "When prices are fluctuating, how do you know when to buy?",
+    img: img5Blog,
+  },
+  {
+    id: 6,
+    label: "What Is DeFi? Inside the Wild West of Cryptocurrency.",
+    tag: "TIPS & TRICKS",
+    desc: "Welcome to decentralized finance or DeFi, the new frontier of crypto that will..",
+    img: img6Blog,
   },
 ];
