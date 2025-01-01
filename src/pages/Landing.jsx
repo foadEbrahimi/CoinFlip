@@ -5,6 +5,7 @@ import MarketTrend from "./landing/MarketTrend";
 import Faetures from "./landing/Faetures";
 import MarketUpdate from "./landing/MarketUpdate";
 import GetStarted from "./landing/GetStarted";
+import Blog from "./landing/Blog";
 
 export default function Landing() {
   return (
@@ -14,6 +15,7 @@ export default function Landing() {
       <Faetures />
       <MarketUpdate />
       <GetStarted />
+      <Blog />
     </div>
   );
 }
