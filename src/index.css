@@ -214,14 +214,10 @@
   }
 }
 
-/* .shape {
-  transform: translateX(-100px);
-  opacity: 0;
-  animation: anime 2s both;
+.footer ul li {
+  transition: all 0.3s ease;
 }
-@keyframes anime {
-  to {
-    transform: translate(0);
-    opacity: 1;
-  }
-} */
+.footer ul li:hover {
+  transform: scaleX(1.1);
+  color: #0fae96;
+}
