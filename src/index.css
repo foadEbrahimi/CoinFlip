@@ -221,3 +221,10 @@
   transform: scaleX(1.1);
   color: #0fae96;
 }
+.footer img {
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.footer img:hover {
+  scale: 1.4;
+}
