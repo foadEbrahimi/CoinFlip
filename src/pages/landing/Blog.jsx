@@ -11,7 +11,7 @@ import { BlogInfo } from "@/constants";
 
 export default function Blog() {
   return (
-    <div className="my-20 ~px-5/24">
+    <div className="mt-20 ~px-5/24">
       <ContentBlog />
       <div className="mb-10 mt-10 flex flex-col gap-10 lg:grid lg:grid-cols-12">
         <div className="relative col-span-6 h-[391px]">
@@ -36,11 +36,14 @@ export default function Blog() {
           ))}
         </div>
       </div>
-      <div className="grid sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-5">
+      <div className="grid gap-5 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4">
         {BlogInfo.slice(2, 6).map((item) => (
           <Card key={item.id} {...item} />
         ))}
       </div>
+      <span className="flex mt-10 font-SemiBold text-[16px] text-[#0FAE96] underline underline-offset-2">
+        See All Articles
+      </span>
     </div>
   );
 }
