@@ -7,7 +7,7 @@ import { TableDemo } from "@/components/myComponents/MarketUpdate/Table";
 
 export default function MarketUpdate() {
   return (
-    <div className="mb-10 mt-16 ~px-5/24">
+    <div id="scroll" className="mb-10 mt-16 ~px-5/24">
       <div className="space-y-4">
         <span className="font-Bold text-3xl">Market Update</span>
         <p p className="font-RegularRoboto text-[#B6B6B6]">
