@@ -15,7 +15,7 @@ import chart2 from "/assets/images/MarketTrend/chart2.svg";
 
 export default function CardMarket({ img, label, badge, price, percentage }) {
   return (
-    <Card className="w-full min-w-fit flex-1">
+    <Card className="w-full min-w-fit flex-1 p-3">
       <CardHeader className="items-center justify-between">
         <div className="flex items-center gap-3">
           <img src={img} alt={`${label} image`} />
@@ -38,7 +38,11 @@ export default function CardMarket({ img, label, badge, price, percentage }) {
             {percentage}%
           </CardDescription>
         </div>
-        <img src={chart1} alt="chart svg" className="h-full" />
+        <img
+          src={Math.random() * 2 >= 1 ? chart1 : chart2}
+          alt="chart svg"
+          className="h-full"
+        />
       </CardFooter>
     </Card>
   );
