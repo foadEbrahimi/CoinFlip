@@ -32,7 +32,7 @@ export default function Navbar() {
           </ul>
         </div>
         <div className="flex items-center gap-3">
-          <ModeToggle />
+          {/* <ModeToggle /> */}
           <Button className="bg-gradient-to-l from-[#18C8FF] to-[#933FFE] text-foreground dark:from-[#933FFE] dark:to-[#18C8FF]">
             Sign up
           </Button>
