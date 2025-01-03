@@ -5,7 +5,7 @@ import ContentBlog from "@/components/myComponents/Blog/ContentBlog";
 import { Badge } from "@/components/ui/badge";
 import Card from "@/components/myComponents/Blog/Card";
 
-import img from "../../../public/assets/images/Blog/bigImg.png";
+import img from "/assets/images/Blog/bigImg.png";
 
 import { BlogInfo } from "@/constants";
 
