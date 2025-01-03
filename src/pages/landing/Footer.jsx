@@ -1,9 +1,9 @@
 import React from "react";
 
-import instagram from "../../../public/assets/images/Footer/instagram.svg";
-import facebook from "../../../public/assets/images/Footer/facebook.svg";
-import twitter from "../../../public/assets/images/Footer/twitter.svg";
-import youtube from "../../../public/assets/images/Footer/youtube.svg";
+import instagram from "/assets/images/Footer/instagram.svg";
+import facebook from "/assets/images/Footer/facebook.svg";
+import twitter from "/assets/images/Footer/twitter.svg";
+import youtube from "/assets/images/Footer/youtube.svg";
 
 export default function Footer() {
   return (
