@@ -18,12 +18,12 @@ import img1GetStarted from "/assets/images/GetStarted/img1.svg";
 import img2GetStarted from "/assets/images/GetStarted/img2.svg";
 import img3GetStarted from "/assets/images/GetStarted/img3.svg";
 
-import img1Blog from "../../public/assets/images/Blog/cryptoBase.png";
-import img2Blog from "../../public/assets/images/Blog/personalBank.png";
-import img3Blog from "../../public/assets/images/Blog/cryptoWallet.png";
-import img4Blog from "../../public/assets/images/Blog/bitcoin.png";
-import img5Blog from "../../public/assets/images/Blog/bestTime.png";
-import img6Blog from "../../public/assets/images/Blog/defi.png";
+import img1Blog from "/assets/images/Blog/cryptoBase.png";
+import img2Blog from "/assets/images/Blog/personalBank.png";
+import img3Blog from "/assets/images/Blog/cryptoWallet.png";
+import img4Blog from "/assets/images/Blog/bitcoin.png";
+import img5Blog from "/assets/images/Blog/bestTime.png";
+import img6Blog from "/assets/images/Blog/defi.png";
 
 export const Navlist = [
   {
