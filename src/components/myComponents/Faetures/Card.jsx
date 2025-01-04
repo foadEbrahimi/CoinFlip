@@ -10,29 +10,50 @@ import {
 } from "@/components/ui/card";
 
 import arrow from "/assets/images/Faetures/arrow.svg";
-
+import { motion } from "motion/react";
 export default function CardFaetures({ img, title, decs }) {
   return (
-    <Card className="w-full min-w-fit flex-1 space-y-10">
-      <CardHeader>
-        <img src={img} alt="svg" />
-      </CardHeader>
-      <CardContent className="space-y-2">
-        <CardTitle className="font-SemiBold text-2xl">{title}</CardTitle>
-        <CardDescription className="font-RegularRoboto sm:max-w-60">
-          {decs}
-        </CardDescription>
-      </CardContent>
-      <CardFooter className="pt-9">
-        <button className="group flex items-center gap-2 font-Medium text-[#0FAE96]">
-          See Explained{" "}
-          <img
-            src={arrow}
-            alt="arrow svg"
-            className="transition-all duration-300 group-hover:translate-x-2"
-          />
-        </button>
-      </CardFooter>
-    </Card>
+    <motion.div
+      className="w-full min-w-fit flex-1"
+      initial={{
+        // scale: 0,
+        opacity: 0,
+        y: 50,
+      }}
+      // animate={{
+      //   scale: 1,
+      //   opacity: 1,
+      // }}
+      whileInView={{
+        // scale: 1,
+        opacity: 1,
+        y: 0,
+      }}
+      transition={{
+        duration: 1,
+      }}
+    >
+      <Card className="space-y-10">
+        <CardHeader>
+          <img src={img} alt="svg" />
+        </CardHeader>
+        <CardContent className="space-y-2">
+          <CardTitle className="font-SemiBold text-2xl">{title}</CardTitle>
+          <CardDescription className="font-RegularRoboto sm:max-w-60">
+            {decs}
+          </CardDescription>
+        </CardContent>
+        <CardFooter className="pt-9">
+          <button className="group flex items-center gap-2 font-Medium text-[#0FAE96]">
+            See Explained{" "}
+            <img
+              src={arrow}
+              alt="arrow svg"
+              className="transition-all duration-300 group-hover:translate-x-2"
+            />
+          </button>
+        </CardFooter>
+      </Card>
+    </motion.div>
   );
 }
