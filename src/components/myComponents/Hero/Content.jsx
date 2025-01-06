@@ -41,7 +41,7 @@ export default function Content() {
                 duration: 1.5,
               }
             : {
-                duration: 3,
+                duration: 10,
                 repeat: Infinity,
                 repeatType: "mirror",
               }
