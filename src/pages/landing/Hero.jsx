@@ -1,21 +1,26 @@
 import React from "react";
 
-import img from "/assets/images/hero/gradient1.svg";
-import img2 from "/assets/images/hero/gradient2.svg";
 import bitcoin from "/assets/images/hero/Bitcoin.svg";
 import Etherium from "/assets/images/hero/Etherium.svg";
-import Monero from "/assets/images/hero/Monero.svg";
+import img from "/assets/images/hero/gradient1.svg";
+import img2 from "/assets/images/hero/gradient2.svg";
 import LiteCoin from "/assets/images/hero/LiteCoin.svg";
-import star1 from "/assets/images/hero/star.svg";
-import star2 from "/assets/images/hero/star2.svg";
-import starImg from "/assets/images/hero/star-img.svg";
+import Monero from "/assets/images/hero/Monero.svg";
 import sphere from "/assets/images/hero/sphere.svg";
 import sphere2 from "/assets/images/hero/sphere2.svg";
+import starImg from "/assets/images/hero/star-img.svg";
+import star1 from "/assets/images/hero/star.svg";
+import star2 from "/assets/images/hero/star2.svg";
 
-import Navbar from "@/components/myComponents/Hero/Navbar";
 import Content from "@/components/myComponents/Hero/Content";
+import Navbar from "@/components/myComponents/Hero/Navbar";
+
+import { motion } from "motion/react";
 
 export default function Hero() {
+  const radiusX = 100; // شعاع بیضی افقی
+  const radiusY = 50; // شعاع بیضی عمودی
+  const duration = 4; // مدت زمان انیمیشن
   return (
     <div
       id="heroBg"
@@ -43,29 +48,71 @@ export default function Hero() {
       <div className="hidden md:block">
         {/* left side */}
         <div className="relative -z-20 lg:z-0">
-          <img
+          <motion.img
             src={bitcoin}
             draggable={false}
             className="absolute -top-10"
             alt="bitcoin svg"
+            initial={{
+              scale: 1,
+            }}
+            animate={{
+              scale: 1.05,
+            }}
+            transition={{
+              duration: 1,
+              ease: "easeInOut",
+              repeat: Infinity,
+              repeatType: "reverse",
+            }}
           />
-          <img
+          <motion.img
             src={star1}
             draggable={false}
             className="absolute left-36 top-32"
             alt="bitcoin svg"
+            initial={{
+              opacity: 1,
+            }}
+            animate={{
+              opacity: 0.5,
+            }}
+            transition={{
+              duration: 0.5,
+              repeat: Infinity,
+              repeatType: "reverse",
+            }}
           />
-          <img
+          <motion.img
             src={sphere2}
             draggable={false}
             className="absolute top-64"
             alt="bitcoin svg"
+            animate={{
+              x: [5, -5],
+            }}
+            transition={{
+              duration: 2,
+              repeat: Infinity,
+              repeatType: "mirror",
+            }}
           />
-          <img
+          <motion.img
             src={LiteCoin}
             draggable={false}
             className="absolute left-36 top-[27rem]"
             alt="bitcoin svg"
+            initial={{
+              rotate: "0",
+            }}
+            animate={{
+              rotate: "360deg",
+            }}
+            transition={{
+              duration: 10,
+              repeat: Infinity,
+              repeatType: "reverse",
+            }}
           />
         </div>
         {/* right side */}
