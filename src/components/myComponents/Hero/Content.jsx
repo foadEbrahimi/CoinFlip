@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import { Button } from "@/components/ui/button";
 
@@ -7,20 +7,49 @@ import glass from "/assets/images/hero/glass.svg";
 import { motion } from "motion/react";
 
 export default function Content() {
+  const [animateFirst, setAnimateFirst] = useState(true);
+
   return (
     <div className="row-span-10 -row-start-9">
       <motion.h1
-        initial={{
-          opacity: 0,
-          scale: 0,
-        }}
-        animate={{
-          opacity: 1,
-          scale: [0, 2, 1],
-        }}
-        transition={{
-          scale: { times: [0, 0.9, 1], duration: 1.5 },
-          duration: 1.5,
+        initial={
+          animateFirst
+            ? {
+                opacity: 0,
+                scale: 0,
+              }
+            : {
+                opacity: 1,
+                scale: 1,
+                x: 20,
+              }
+        }
+        animate={
+          animateFirst
+            ? {
+                opacity: 1,
+                scale: [0, 2, 1],
+              }
+            : {
+                x: [0, 20, -20],
+              }
+        }
+        transition={
+          animateFirst
+            ? {
+                scale: { times: [0, 0.9, 1], duration: 1.5 },
+                duration: 1.5,
+              }
+            : {
+                duration: 3,
+                repeat: Infinity,
+                repeatType: "mirror",
+              }
+        }
+        onAnimationComplete={() => {
+          setTimeout(() => {
+            setAnimateFirst(false);
+          }, 1000);
         }}
         className="relative mx-auto text-center font-Bold !leading-[130%] ~text-5xl/7xl lg:~max-w-2xl/xl"
       >
