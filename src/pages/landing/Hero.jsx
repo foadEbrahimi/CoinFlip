@@ -18,9 +18,6 @@ import Navbar from "@/components/myComponents/Hero/Navbar";
 import { motion } from "motion/react";
 
 export default function Hero() {
-  const radiusX = 100; // شعاع بیضی افقی
-  const radiusY = 50; // شعاع بیضی عمودی
-  const duration = 4; // مدت زمان انیمیشن
   return (
     <div
       id="heroBg"
@@ -47,7 +44,21 @@ export default function Hero() {
       {/* hanging stars */}
       <div className="hidden md:block">
         {/* left side */}
-        <div className="relative -z-20 lg:z-0">
+        <motion.div
+          initial={{
+            opacity: 0,
+            x: -50,
+          }}
+          animate={{
+            opacity: 1,
+            x: 0,
+          }}
+          transition={{
+            delay: 2,
+            duration: 1,
+          }}
+          className="relative -z-20 lg:z-0"
+        >
           <motion.img
             src={bitcoin}
             draggable={false}
@@ -72,15 +83,15 @@ export default function Hero() {
             className="absolute left-36 top-32"
             alt="bitcoin svg"
             initial={{
-              opacity: 1,
+              rotate: 0,
             }}
             animate={{
-              opacity: 0.5,
+              rotate: "360deg",
             }}
             transition={{
-              duration: 0.5,
+              duration: 10,
               repeat: Infinity,
-              repeatType: "reverse",
+              repeatType: "loop",
             }}
           />
           <motion.img
@@ -103,7 +114,42 @@ export default function Hero() {
             className="absolute left-36 top-[27rem]"
             alt="bitcoin svg"
             initial={{
-              rotate: "0",
+              scale: 1,
+            }}
+            animate={{
+              scale: 1.05,
+            }}
+            transition={{
+              duration: 1,
+              ease: "easeInOut",
+              repeat: Infinity,
+              repeatType: "reverse",
+            }}
+          />
+        </motion.div>
+        {/* right side */}
+        <motion.div
+          initial={{
+            opacity: 0,
+            x: 50,
+          }}
+          animate={{
+            opacity: 1,
+            x: 0,
+          }}
+          transition={{
+            delay: 2,
+            duration: 1,
+          }}
+          className="relative -z-20 lg:z-0"
+        >
+          <motion.img
+            src={starImg}
+            draggable={false}
+            className="absolute -top-5 right-48"
+            alt="starImg svg"
+            initial={{
+              rotate: 0,
             }}
             animate={{
               rotate: "360deg",
@@ -111,49 +157,99 @@ export default function Hero() {
             transition={{
               duration: 10,
               repeat: Infinity,
-              repeatType: "reverse",
+              repeatType: "loop",
             }}
           />
-        </div>
-        {/* right side */}
-        <div className="relative -z-20 lg:z-0">
-          <img
-            src={starImg}
-            draggable={false}
-            className="absolute -top-5 right-48"
-            alt="starImg svg"
-          />
-          <img
+          <motion.img
             src={star2}
             draggable={false}
             className="absolute right-0 top-5"
             alt="starImg svg"
+            initial={{
+              rotate: 0,
+            }}
+            animate={{
+              rotate: "360deg",
+            }}
+            transition={{
+              duration: 10,
+              repeat: Infinity,
+              repeatType: "loop",
+            }}
           />
-          <img
+          <motion.img
             src={Monero}
             draggable={false}
             className="absolute right-0 top-24"
             alt="starImg svg"
+            initial={{
+              scale: 1,
+            }}
+            animate={{
+              scale: 1.05,
+            }}
+            transition={{
+              duration: 1,
+              ease: "easeInOut",
+              repeat: Infinity,
+              repeatType: "reverse",
+            }}
           />
-          <img
+          <motion.img
             src={sphere}
             draggable={false}
             className="absolute -right-44 top-60"
             alt="starImg svg"
+            initial={{
+              y: 0,
+            }}
+            animate={{
+              y: [10, 0, -10],
+            }}
+            transition={{
+              duration: 2,
+              delay: 1,
+              type: "spring",
+              repeat: Infinity,
+              repeatType: "mirror",
+            }}
           />
-          <img
+          <motion.img
             src={Etherium}
             draggable={false}
             className="absolute right-48 top-[27rem]"
             alt="starImg svg"
+            initial={{
+              scale: 1,
+            }}
+            animate={{
+              scale: 1.05,
+            }}
+            transition={{
+              duration: 1,
+              ease: "easeInOut",
+              repeat: Infinity,
+              repeatType: "reverse",
+            }}
           />
-          <img
+          <motion.img
             src={star1}
             draggable={false}
             className="absolute right-0 top-[33rem]"
             alt="starImg svg"
+            initial={{
+              rotate: 0,
+            }}
+            animate={{
+              rotate: "360deg",
+            }}
+            transition={{
+              duration: 10,
+              repeat: Infinity,
+              repeatType: "loop",
+            }}
           />
-        </div>
+        </motion.div>
       </div>
       {/* end */}
     </div>
