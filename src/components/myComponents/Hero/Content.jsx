@@ -94,12 +94,24 @@ export default function Content() {
         }}
         className="mt-5 flex items-center justify-center"
       >
-        <Button
-          size="lg"
-          className="bg-gradient-to-l from-[#18C8FF] to-[#933FFE] text-foreground dark:from-[#933FFE] dark:to-[#18C8FF]"
+        <motion.div
+          whileHover={{
+            scale: 0.9,
+          }}
+          whileTap={{
+            scale: 1.1,
+          }}
+          transition={{
+            duration: 0.2,
+          }}
         >
-          Get Started
-        </Button>
+          <Button
+            className="bg-gradient-to-l from-[#18C8FF] to-[#933FFE] text-foreground dark:from-[#933FFE] dark:to-[#18C8FF]"
+            size="lg"
+          >
+            Get Started
+          </Button>
+        </motion.div>
       </motion.div>
     </div>
   );
