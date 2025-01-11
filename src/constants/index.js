@@ -55,6 +55,7 @@ export const MarketTrending = [
     badge: "bitcoin",
     price: "56,623.54",
     percentage: "1.41",
+    delay: 0,
   },
   {
     id: 2,
@@ -63,6 +64,7 @@ export const MarketTrending = [
     badge: "ETHEREUM",
     price: "4,267.90",
     percentage: "2.22",
+    delay: 0.9,
   },
   {
     id: 3,
@@ -71,6 +73,7 @@ export const MarketTrending = [
     badge: "BINANCE",
     price: "587.74",
     percentage: "0.82",
+    delay: 1.3,
   },
   {
     id: 4,
@@ -79,6 +82,7 @@ export const MarketTrending = [
     badge: "TETHER",
     price: "0.9998",
     percentage: "0,03",
+    delay: 1.7,
   },
 ];
 export const FaeturesInfo = [
