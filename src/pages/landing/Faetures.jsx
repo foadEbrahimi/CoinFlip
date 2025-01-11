@@ -1,18 +1,26 @@
 import React from "react";
+
 import CardFaetures from "@/components/myComponents/Faetures/Card";
+
 import { FaeturesInfo } from "@/constants";
 import { Button } from "@/components/ui/button";
 
+import { motion } from "motion/react";
 export default function Faetures() {
   return (
     <div className="mt-28 ~px-5/24">
-      <div className="flex flex-col items-center justify-center gap-4">
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 1, delay: 0.5 }}
+        className="flex flex-col items-center justify-center gap-4"
+      >
         <span className="font-Bold text-4xl">CryptoCap Amazing Faetures</span>
         <p className="text-center font-RegularRoboto text-lg text-[#B6B6B6]">
           Explore sensational features to prepare your best investment in
           cryptocurrency
         </p>
-      </div>
+      </motion.div>
       <div className="mt-16 flex flex-wrap gap-5">
         {FaeturesInfo.map((item) => (
           <CardFaetures key={item.id} {...item} />
@@ -27,7 +35,7 @@ export default function Faetures() {
             should own one right now. So let's do it.
           </p>
         </div>
-        <Button className="rounded-lg p-6 text-[15px] bg-[#0FAE96] font-SemiBold">
+        <Button className="rounded-lg bg-[#0FAE96] p-6 font-SemiBold text-[15px]">
           Learn & Explore Now
         </Button>
       </div>

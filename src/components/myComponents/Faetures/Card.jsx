@@ -10,27 +10,24 @@ import {
 } from "@/components/ui/card";
 
 import arrow from "/assets/images/Faetures/arrow.svg";
+
 import { motion } from "motion/react";
-export default function CardFaetures({ img, title, decs }) {
+
+export default function CardFaetures({ img, title, decs, x, delay }) {
   return (
     <motion.div
       className="w-full min-w-fit flex-1"
       initial={{
-        // scale: 0,
+        x,
         opacity: 0,
-        y: 50,
       }}
-      // animate={{
-      //   scale: 1,
-      //   opacity: 1,
-      // }}
       whileInView={{
-        // scale: 1,
+        x: 0,
         opacity: 1,
-        y: 0,
       }}
       transition={{
         duration: 1,
+        delay,
       }}
     >
       <Card className="space-y-10">
