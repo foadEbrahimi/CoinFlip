@@ -1,6 +1,6 @@
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
-import React from "react";
+import React, { useRef } from "react";
 import {
   Card,
   CardDescription,
@@ -13,7 +13,7 @@ import arrow from "/assets/images/MarketTrend/arrow.svg";
 import chart1 from "/assets/images/MarketTrend/chart1.svg";
 import chart2 from "/assets/images/MarketTrend/chart2.svg";
 
-import { motion } from "motion/react";
+import { motion, useInView } from "motion/react";
 
 export default function CardMarket({
   img,
@@ -23,15 +23,20 @@ export default function CardMarket({
   percentage,
   delay,
 }) {
+  const ref = useRef(null);
+  const isInView = useInView(ref, {
+    once: true,
+  });
   return (
     <motion.div
+      ref={ref}
       initial={{
         y: 100,
         opacity: 0,
       }}
-      whileInView={{
-        y: 0,
-        opacity: 1,
+      animate={{
+        y: isInView ? 0 : 100,
+        opacity: isInView ? 1 : 0,
       }}
       transition={{
         duration: 1.2,
