@@ -11,6 +11,8 @@ import {
 import { TableInfo } from "@/constants";
 import { Separator } from "@radix-ui/react-dropdown-menu";
 
+import { motion } from "motion/react";
+
 export function TableDemo() {
   return (
     <Table className="overflow-x-auto whitespace-nowrap">
@@ -25,8 +27,19 @@ export function TableDemo() {
         </TableRow>
       </TableHeader>
       <TableBody id="scroll">
-        {TableInfo.map((coin) => (
-          <TableRow key={coin.id}>
+        {TableInfo.map((coin, index) => (
+          <motion.tr
+            initial={{ x: -100, opacity: 0 }}
+            whileInView={{
+              x: 0,
+              opacity: 1,
+            }}
+            transition={{
+              duration: 1.2,
+              delay: 0.5 * index,
+            }}
+            key={coin.id}
+          >
             <TableCell className="font-RegularRoboto text-lg text-[#B6B6B6]">
               {coin.id}
             </TableCell>
@@ -69,13 +82,21 @@ export function TableDemo() {
                 Trade
               </Button>
             </TableCell>
-          </TableRow>
+          </motion.tr>
         ))}
       </TableBody>
       <TableCaption>
-        <span className="flex font-SemiBold text-[16px] text-[#0FAE96] underline underline-offset-2">
+        <motion.span
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{
+            duration: 1,
+            delay: 4,
+          }}
+          className="flex font-SemiBold text-[16px] text-[#0FAE96] underline underline-offset-2"
+        >
           See All Coins
-        </span>
+        </motion.span>
       </TableCaption>
     </Table>
   );
