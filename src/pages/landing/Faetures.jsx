@@ -2,8 +2,8 @@ import React from "react";
 
 import CardFaetures from "@/components/myComponents/Faetures/Card";
 
-import { FaeturesInfo } from "@/constants";
 import { Button } from "@/components/ui/button";
+import { FaeturesInfo } from "@/constants";
 
 import { motion } from "motion/react";
 export default function Faetures() {
@@ -26,8 +26,20 @@ export default function Faetures() {
           <CardFaetures key={item.id} {...item} />
         ))}
       </div>
-
-      <div className="mb-10 mt-24 items-center justify-between space-y-5 rounded-xl border border-[rgba(255,255,255,0.08)] p-6 ~px-5/14 sm:flex">
+      <motion.div
+        initial={{
+          opacity: 0,
+          y: -100,
+        }}
+        whileInView={{
+          y: 0,
+          opacity: 1,
+        }}
+        transition={{
+          duration: 2,
+        }}
+        className="mb-10 mt-24 items-center justify-between space-y-5 rounded-xl border border-[rgba(255,255,255,0.08)] p-6 ~px-5/14 sm:flex"
+      >
         <div className="space-y-3">
           <span className="font-SemiBold text-2xl">New In Cryptocurrency?</span>
           <p className="max-w-[29rem] font-RegularRoboto text-[#B6B6B6]">
@@ -38,7 +50,7 @@ export default function Faetures() {
         <Button className="rounded-lg bg-[#0FAE96] p-6 font-SemiBold text-[15px]">
           Learn & Explore Now
         </Button>
-      </div>
+      </motion.div>
     </div>
   );
 }
