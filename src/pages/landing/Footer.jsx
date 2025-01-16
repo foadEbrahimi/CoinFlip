@@ -1,14 +1,36 @@
-import React from "react";
+import React, { useRef } from "react";
 
 import instagram from "/assets/images/Footer/instagram.svg";
 import facebook from "/assets/images/Footer/facebook.svg";
 import twitter from "/assets/images/Footer/twitter.svg";
 import youtube from "/assets/images/Footer/youtube.svg";
 
+import { motion, useInView } from "motion/react";
+
 export default function Footer() {
+  const ref = useRef();
+  const isInView = useInView(ref, {
+    once: true,
+  });
+
   return (
     <div className="footer mt-10 border-t border-[rgba(255,255,255,0.05)]">
-      <div className="grid gap-8 py-14 ~px-5/24 sm:grid-cols-12">
+      <motion.div
+        ref={ref}
+        initial={{
+          y: -100,
+          opacity: 0,
+        }}
+        animate={{
+          opacity: isInView && 1,
+          y: isInView && 0,
+        }}
+        transition={{
+          duration: 1,
+          delay: 1.5,
+        }}
+        className="grid gap-8 py-14 ~px-5/24 sm:grid-cols-12"
+      >
         <div className="col-span-3 xl:col-span-5 2xl:col-span-6">
           <span className="font-Bold text-4xl">
             Coin<span className="font-Bold text-[#0FAE96]">Flip</span>
@@ -51,7 +73,7 @@ export default function Footer() {
             <li>Market Update</li>
           </ul>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }
