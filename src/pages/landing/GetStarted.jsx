@@ -9,7 +9,7 @@ import { GetStartedInfo } from "@/constants";
 import { motion } from "motion/react";
 export default function GetStarted() {
   return (
-    <div className="mt-44 flex h-[80dvh] w-full items-center ~px-5/24 overflow-hidden">
+    <div className="mt-44 flex h-[80dvh] w-full items-center overflow-hidden ~px-5/24">
       <div className="flex w-full flex-col items-start justify-between gap-10 md:flex-row">
         <motion.div
           initial={{ x: -100, opacity: 0 }}

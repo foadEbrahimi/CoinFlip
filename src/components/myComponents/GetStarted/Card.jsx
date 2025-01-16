@@ -1,19 +1,25 @@
-import React from "react";
+import React, { useRef } from "react";
 
 import { Card, CardContent } from "@/components/ui/card";
 
-import { motion } from "motion/react";
+import { motion, useInView } from "motion/react";
 
 export default function CardGetStarted({ label, desc, img, index }) {
+  const ref = useRef();
+  const isInView = useInView(ref, {
+    once: true,
+  });
+
   return (
     <motion.div
+      ref={ref}
       initial={{
         x: 100,
         opacity: 0,
       }}
-      whileInView={{
-        x: 0,
-        opacity: 1,
+      animate={{
+        x: isInView ? 0 : 100,
+        opacity: isInView ? 1 : 0,
       }}
       transition={{
         duration: 1,
