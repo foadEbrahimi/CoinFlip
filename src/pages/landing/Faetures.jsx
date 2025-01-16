@@ -1,12 +1,16 @@
-import React from "react";
+import React, { useRef } from "react";
 
 import CardFaetures from "@/components/myComponents/Faetures/Card";
 
 import { Button } from "@/components/ui/button";
 import { FaeturesInfo } from "@/constants";
 
-import { motion } from "motion/react";
+import { motion, useInView } from "motion/react";
 export default function Faetures() {
+  const ref = useRef();
+  const isInView = useInView(ref, {
+    once: true,
+  });
   return (
     <div className="mt-28 ~px-5/24">
       <motion.div
@@ -27,13 +31,14 @@ export default function Faetures() {
         ))}
       </div>
       <motion.div
+        ref={ref}
         initial={{
           opacity: 0,
           y: -100,
         }}
-        whileInView={{
-          y: 0,
-          opacity: 1,
+        animate={{
+          y: isInView ? 0 : -100,
+          opacity: isInView ? 1 : 0,
         }}
         transition={{
           duration: 2,
