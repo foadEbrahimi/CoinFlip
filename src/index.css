@@ -17,55 +17,55 @@
   font-family: "Raleway Regular";
   font-style: normal;
   font-weight: normal;
-  src: url("/fonts/Raleway-Regular.woff") format("woff");
+  src: url("assets/fonts/Raleway-Regular.woff") format("woff");
 }
 
 @font-face {
   font-family: "Raleway Medium";
   font-style: normal;
   font-weight: normal;
-  src: url("/fonts/Raleway-Medium.woff") format("woff");
+  src: url("assets/fonts/Raleway-Medium.woff") format("woff");
 }
 
 @font-face {
   font-family: "Thin";
   font-style: normal;
   font-weight: normal;
-  src: url("/fonts/Raleway-Thin.woff") format("woff");
+  src: url("assets/fonts/Raleway-Thin.woff") format("woff");
 }
 
 @font-face {
   font-family: "Raleway Bold";
   font-style: normal;
   font-weight: normal;
-  src: url("/fonts/Raleway-Bold.woff") format("woff");
+  src: url("assets/fonts/Raleway-Bold.woff") format("woff");
 }
 
 @font-face {
   font-family: "Raleway SemiBold";
   font-style: normal;
   font-weight: normal;
-  src: url("/fonts/Raleway-SemiBold.woff") format("woff");
+  src: url("assets/fonts/Raleway-SemiBold.woff") format("woff");
 }
 
 @font-face {
   font-family: "Raleway Black";
   font-style: normal;
   font-weight: normal;
-  src: url("/fonts/Raleway-Black.woff") format("woff");
+  src: url("assets/fonts/Raleway-Black.woff") format("woff");
 }
 
 @font-face {
   font-family: "Roboto Regular";
   font-style: normal;
   font-weight: normal;
-  src: url("/fonts/Roboto-Regular.ttf");
+  src: url("assets/fonts/Roboto-Regular.ttf");
 }
 @font-face {
   font-family: "Roboto Medium";
   font-style: normal;
   font-weight: normal;
-  src: url("/fonts/Roboto-Medium.ttf");
+  src: url("assets/fonts/Roboto-Medium.ttf");
 }
 
 * {
