@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 
 import ContentBlog from "@/components/myComponents/Blog/ContentBlog";
 
@@ -9,14 +9,31 @@ import img from "/assets/images/Blog/bigImg.png";
 
 import { BlogInfo } from "@/constants";
 
-import { motion } from "motion/react";
+import { motion, useInView } from "motion/react";
 
 export default function Blog() {
+  const ref = useRef();
+  const isInView = useInView(ref, {
+    once: true,
+  });
+
   return (
     <div className="mt-20 ~px-5/24">
       <ContentBlog />
       <div className="mb-10 mt-10 flex flex-col gap-10 lg:grid lg:grid-cols-12">
-        <div className="relative col-span-6 h-[391px]">
+        <motion.div
+          ref={ref}
+          initial={{ scale: 0, opacity: 0 }}
+          animate={{
+            scale: isInView ? 1 : 0,
+            opacity: isInView ? 1 : 0,
+          }}
+          transition={{
+            duration: 1,
+            delay: 0.5,
+          }}
+          className="relative col-span-6 h-[391px]"
+        >
           <div className="absolute h-full w-full rounded-2xl bg-gradient-to-b from-[rgba(38,1,68,0.75)] to-[rgba(38,1,68,0.75)]"></div>
           <img
             src={img}
@@ -31,7 +48,7 @@ export default function Blog() {
               CRYPTO BASIC
             </Badge>
           </div>
-        </div>
+        </motion.div>
         <div className="space-y-5 sm:col-span-6 sm:grid sm:grid-cols-12 sm:gap-10 sm:space-y-0">
           {BlogInfo.slice(0, 2).map((item, index) => (
             <Card
