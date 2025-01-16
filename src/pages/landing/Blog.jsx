@@ -9,6 +9,8 @@ import img from "/assets/images/Blog/bigImg.png";
 
 import { BlogInfo } from "@/constants";
 
+import { motion } from "motion/react";
+
 export default function Blog() {
   return (
     <div className="mt-20 ~px-5/24">
@@ -31,19 +33,29 @@ export default function Blog() {
           </div>
         </div>
         <div className="space-y-5 sm:col-span-6 sm:grid sm:grid-cols-12 sm:gap-10 sm:space-y-0">
-          {BlogInfo.slice(0, 2).map((item) => (
-            <Card key={item.id} {...item} className="col-span-6" />
+          {BlogInfo.slice(0, 2).map((item, index) => (
+            <Card
+              key={item.id}
+              index={index}
+              {...item}
+              className="col-span-6"
+            />
           ))}
         </div>
       </div>
       <div className="grid gap-5 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4">
-        {BlogInfo.slice(2, 6).map((item) => (
-          <Card key={item.id} {...item} />
+        {BlogInfo.slice(2, 6).map((item, index) => (
+          <Card index={index + 3} key={item.id} {...item} />
         ))}
       </div>
-      <span className="flex mt-10 font-SemiBold text-[16px] text-[#0FAE96] underline underline-offset-2">
+      <motion.span
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 6, duration: 1 }}
+        className="mt-10 flex font-SemiBold text-[16px] text-[#0FAE96] underline underline-offset-2"
+      >
         See All Articles
-      </span>
+      </motion.span>
     </div>
   );
 }
