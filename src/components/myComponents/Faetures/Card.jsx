@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 
 import {
   Card,
@@ -11,19 +11,24 @@ import {
 
 import arrow from "/assets/images/Faetures/arrow.svg";
 
-import { motion } from "motion/react";
+import { motion, useInView } from "motion/react";
 
 export default function CardFaetures({ img, title, decs, x, delay }) {
+  const ref = useRef();
+  const isInView = useInView(ref, {
+    once: true,
+  });
   return (
     <motion.div
+      ref={ref}
       className="w-full min-w-fit flex-1"
       initial={{
         x,
         opacity: 0,
       }}
-      whileInView={{
-        x: 0,
-        opacity: 1,
+      animate={{
+        x: isInView ? 0 : x,
+        opacity: isInView ? 1 : 0,
       }}
       transition={{
         duration: 1,

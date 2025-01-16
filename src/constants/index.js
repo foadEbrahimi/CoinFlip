@@ -92,7 +92,7 @@ export const FaeturesInfo = [
     title: "Manage Portfolio",
     decs: "Buy and sell popular digital currencies, keep track of them in the one place.",
     x: -50,
-    delay: "0",
+    delay: "0.5",
   },
   {
     id: 2,
@@ -100,7 +100,7 @@ export const FaeturesInfo = [
     title: "Protected Securely",
     decs: "All cash balances are covered by FDIC insurance, up to a maximum of $250,000.",
     x: -70,
-    delay: "0.5",
+    delay: "1",
   },
   {
     id: 3,
@@ -108,7 +108,7 @@ export const FaeturesInfo = [
     title: "Cryptocurrency Variety",
     decs: "Supports a variety of the most popular digital currencies and always uptodate.",
     x: -90,
-    delay: "1",
+    delay: "1.5",
   },
   {
     id: 4,
@@ -116,7 +116,7 @@ export const FaeturesInfo = [
     title: "Learn Best Practice",
     decs: "Easy to know how to cryptocurrency works and friendly to newbie.",
     x: -110,
-    delay: "1.5",
+    delay: "2",
   },
 ];
 export const TableInfo = [
