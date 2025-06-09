@@ -5,7 +5,7 @@
 /* ... */
 #heroBg {
   background: url("../public/assets/images/hero/circles.svg") center/cover;
-  height: 100dvh;
+  min-height: 100dvh;
 }
 /* حالا در فایرفاکس */
 #scroll {
